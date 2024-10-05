@@ -1,0 +1,25 @@
+﻿@model WeatherResponse
+
+<h1 class="text-light"> 5 Day Weather Forecast for @Model.City.Name, Michigan</h1>
+
+<table class="table table-striped table-hover table-light">
+    <thead>
+        <tr>
+            <th>Date & Time</th>
+            <th>Temperature (°F)</th>
+            <th>Weather</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.List)
+        {
+            <tr>
+                <td>@DateTimeOffset.FromUnixTimeSeconds(item.Dt).ToLocalTime()</td>
+                <td>@item.Main.Temp</td>
+                <td>@item.Weather[0].Main</td>
+                <td>@item.Weather[0].Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
