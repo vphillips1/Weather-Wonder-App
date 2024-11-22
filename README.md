@@ -1,6 +1,6 @@
 # Weather-Wonder-App
 
-### Created a weather app to show the weather depending on the specific city/location you want to get the weather for. Using a Weather API, I was able to create a model class, Service, Controller, and View to display the data from the API. The application is still a work in progress.
+### Created a weather app to show the weather depending on the specific city/location. Using a Weather API, I was able to create a model class, Service, Controller, and View to display the data from the API. The application is still a work in progress.
 ![image](https://github.com/user-attachments/assets/f246f6de-c15d-481f-b163-fb67423b6e37)
 
 
